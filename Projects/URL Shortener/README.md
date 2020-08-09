@@ -2,6 +2,8 @@
 
 ## URL Shortening GUI made using python.
 
+![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
+
 ### Installation
 
 - Clone this repository or download the repository as a zip file.
