@@ -14,7 +14,7 @@ git clone https://github.com/Devansh3712/python.git
 - cd into the folder
 
 ```bash
-cd Projects/URL \Shortener
+cd Projects/URL\ Shortener/
 ```
 
 - Install the required modules using requirements.txt
