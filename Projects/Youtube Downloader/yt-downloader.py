@@ -1,5 +1,7 @@
 from tkinter import *
+from tkinter import ttk
 from pytube import YouTube
+import time
 
 root=Tk()
 root.title("YT Downloader")
@@ -11,10 +13,28 @@ pic=PhotoImage(file="./main.PNG")
 
 def download():
 	try:
+		def bar():
+			pb['value'] = 20
+			root.update_idletasks() 
+			time.sleep(1) 
+			pb['value'] = 40
+			root.update_idletasks() 
+			time.sleep(1) 
+			pb['value'] = 50
+			root.update_idletasks() 
+			time.sleep(1) 
+			pb['value'] = 60
+			root.update_idletasks() 
+			time.sleep(1) 
+			pb['value'] = 80
+			root.update_idletasks() 
+			time.sleep(1) 
+			pb['value'] = 100
 		p.set("Downloading...")
 		root.update()
+		bar()
 		YouTube(s.get()).streams.first().download()
-		p.set("Video downloaded, saved in current directory")
+		p.set("Downloaded")
 	except:
 		p.set("Error")
 		root.update()
@@ -26,11 +46,13 @@ label2=Label(root,textvariable=p)
 button1=Button(root,text="Download",command=download)
 button2=Button(root,text="Quit",command=root.destroy)
 label3=Label(root,image=pic)
+pb=ttk.Progressbar(root, orient=HORIZONTAL, mode='determinate') 
 
 label3.grid(row=1,columnspan=2,rowspan=2,sticky=N+S)
 label1.grid(row=3,column=0)
-text1.grid(row=3,column=1)
-label2.grid(row=4,sticky=N)
+text1.grid(row=3,column=1,sticky=W+E+N+S)
+label2.grid(row=4,column=0)
+pb.grid(row=4,column=1,sticky=W+E+N+S)
 button1.grid(row=5,column=0,sticky=W+E+N+S)
 button2.grid(row=5,column=1,sticky=W+E+N+S)
 root.mainloop()
