@@ -1,6 +1,6 @@
-# Youtube Video Downloader
+# Youtube Downloader
 
-## Youtube video downloading GUI made using python.
+## Youtube audio and video downloading GUI made using python.
 
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
 
