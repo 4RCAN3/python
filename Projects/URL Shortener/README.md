@@ -3,7 +3,6 @@
 ## URL Shortening GUI made using python.
 
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
-[![Run on Repl.it](https://repl.it/badge/github/Devansh3712/python)](https://repl.it/github/Devansh3712/python)
 
 ### Installation
 
