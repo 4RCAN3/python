@@ -1,6 +1,6 @@
-# URL Shortener
+# Translator
 
-## URL Shortening GUI made using python.
+## Language translating GUI made using python.
 
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
 
@@ -14,7 +14,7 @@ git clone https://github.com/Devansh3712/python.git
 - cd into the folder
 
 ```bash
-cd Projects/URL\ Shortener/
+cd Projects/Translator
 ```
 
 - Install the required modules using requirements.txt
@@ -40,11 +40,11 @@ $ python3 -m pip3 install -r requirements.txt
 > Windows
 
 ```shell
-python url-shortener.py
+python translator.py
 ```
 
 > Linux
 
 ```bash
-$ python3 url-shortener.py
+$ python3 translator.py
 ```
