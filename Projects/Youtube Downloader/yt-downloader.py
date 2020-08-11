@@ -39,9 +39,6 @@ def download():
 			YouTube(s.get()).streams.first().download()
 		elif var2.get()==1:
 			YouTube(s.get()).streams.filter(only_audio=True).first().download()
-		elif var1.get()==1 and var2.get()==1:
-			YouTube(s.get()).streams.first().download()
-			YouTube(s.get()).streams.filter(only_audio=True).first().download()
 		p.set("Downloaded")
 	except:
 		p.set("Error")
