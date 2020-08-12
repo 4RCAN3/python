@@ -54,6 +54,9 @@ chooseLang=ttk.Combobox(root,width=20,textvariable=p,state='readonly')
 chooseLang['values']=('Afrikaans','Albanian','Arabic','Armenian',' Azerbaijani','Basque','Belarusian','Bengali','Bosnian','Bulgarian','Catalan','Cebuano','Chichewa','Chinese','Corsican','Croatian','Czech','Danish','Dutch','English','Esperanto','Estonian','Filipino','Finnish','French','Frisian','Galician','Georgian','German','Greek','Gujarati','Haitian Creole','Hausa','Hawaiian','Hebrew','Hindi','Hmong','Hungarian','Icelandic','Igbo','Indonesian','Irish','Italian','Japanese','Javanese','Kannada','Kazakh','Khmer','Kinyarwanda','Korean','Kurdish','Kyrgyz','Lao','Latin','Latvian','Lithuanian','Luxembourgish','Macedonian','Malagasy','Malay','Malayalam','Maltese','Maori','Marathi','Mongolian','Myanmar','Nepali','Norwegian''Odia','Pashto','Persian','Polish','Portuguese','Punjabi','Romanian','Russian','Samoan','Scots Gaelic','Serbian','Sesotho','Shona','Sindhi','Sinhala','Slovak','Slovenian','Somali','Spanish','Sundanese','Swahili','Swedish','Tajik','Tamil','Tatar','Telugu','Thai','Turkish','Turkmen','Ukrainian','Urdu','Uyghur','Uzbek','Vietnamese','Welsh','Xhosa''Yiddish','Yoruba','Zulu')
 chooseLang.current(0)
 
+pic=PhotoImage(file="./main.PNG")
+
+label=Label(root,image=pic)
 text1=Text(root,width=30,height=10,borderwidth=5)
 text2=Text(root,width=30,height=10,borderwidth=5)
 button0=Button(root,text="Translate",command=translate)
@@ -62,6 +65,7 @@ button2=Button(root,text="Copy",command=copy_to_clipboard)
 button3=Button(root,text="Quit",command=root.destroy)
 button5=Button(root,text="Output -> Speech",command=osp)
 
+label.grid(row=0,columnspan=2,sticky=W+E+N+S)
 d.grid(row=1,column=0,sticky=W+E+N+S)
 chooseLang.grid(row=1,column=1,sticky=W+E+N+S)
 text1.grid(row=3,column=0,sticky=W+E+N+S)
