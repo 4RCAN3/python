@@ -37,3 +37,8 @@ class Vector:
 	#Produce string representation of vector
 	def __str__(self):
 		return '<'+str(self._coords)[1:-1]+'>'
+
+v=Vector(5)
+for i in range(5):
+	v[int(input())]
+print(v)
