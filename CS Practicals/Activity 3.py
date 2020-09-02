@@ -1,6 +1,6 @@
 import csv
 file=open("students.csv","r")
-obj=csv.reader(f.delimiter='\t')
+obj=csv.reader(file.delimiter='\t')
 
 #1
 
