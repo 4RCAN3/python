@@ -60,8 +60,8 @@ sys.stdin, sys.stdout = IOWrapper(sys.stdin), IOWrapper(sys.stdout)
 #</fast I/O>
 
 #<template>
-mod=(10**9)+7
-pi=3.14159265358979323846264338327950
+mod = (10**9)+7
+pi = 3.14159265358979323846264338327950
 
 def i1():	#int(input())
 	return int(sys.stdin.readline())
@@ -78,23 +78,23 @@ def arr():	#list(map(int,input().split()))
 def pf(ans): #print(x)
 	return sys.stdout.write(str(ans)+"\n")
 
-def gcd(a,b):
-	if a==0:
+def gcd(a, b):
+	if a == 0:
 		return b
-	elif b==0:
+	elif b == 0:
 		return a
-	if a>b:
-		return gcd(a%b,b)
+	if a > b:
+		return gcd(a % b, b)
 	else:
-		return gcd(a,b%a)
+		return gcd(a, b % a)
 
-def lcm(a,b):
-	return (a*b)//gcd(a,b)
+def lcm(a, b):
+	return (a * b) // gcd(a, b)
 #</template>
 
 #<testcases>
-sys.stdin=open('input.txt','r')
-sys.stdout=open('output.txt','w')
+sys.stdin = open('input.txt','r')
+sys.stdout = open('output.txt','w')
 #</testcases>
 
 #<solve>
@@ -103,7 +103,7 @@ def solve():
 #</solve>
 
 #<solution>
-tc=i1()
+tc = i1()
 for t in range (tc):
 	solve()
 #<solution>
